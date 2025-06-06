@@ -6,11 +6,14 @@ rem Early versions of Windows 10 didn't support ANSI, but since MS is very aggre
 rem about forcing updates, they're probably not likely to appear.
 for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i
 
+rem set codepage to 437 (ansi)
+chcp 437 > nul 
+
 echo.
 if %VERSION% gtr 9 echo [7m
 echo      _______ 
-echo     /======/  ____   _____       _               
-echo    /======/  / ___^| ^| ____^|   __^| ^|   ___  __   __ 
+echo     /ÄÄÄÄÄÄ/  ____   _____       _               
+echo    /______/  / ___^| ^| ____^|   __^| ^|   ___  __   __ 
 echo   /....../  ^| ^|     ^|  _^|    / _` ^|  / _ \ \ \ / /
 echo  /....../   ^| ^|___  ^| ^|___  ^| (_^| ^| ^|  __/  \ V / 
 echo /______/     \____^| ^|_____^|  \__,_^|  \___^|   \_/ 
