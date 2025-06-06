@@ -8,9 +8,13 @@ for /f "tokens=4-5 delims=. " %%i in ('ver') do set VERSION=%%i
 
 echo.
 if %VERSION% gtr 9 echo [7m
-echo ================================================================================
-echo                      TI-84 PLUS CE DEVELOPER TOOLCHAIN                          
-echo ================================================================================
+echo      _______ 
+echo     /======/  ____   _____       _               
+echo    /======/  / ___^| ^| ____^|   __^| ^|   ___  __   __ 
+echo   /....../  ^| ^|     ^|  _^|    / _` ^|  / _ \ \ \ / /
+echo  /....../   ^| ^|___  ^| ^|___  ^| (_^| ^| ^|  __/  \ V / 
+echo /______/     \____^| ^|_____^|  \__,_^|  \___^|   \_/ 
+echo              TI-84 Plus CE Developer Toolchain
 if %VERSION% gtr 9 echo [0m
 echo.
 
